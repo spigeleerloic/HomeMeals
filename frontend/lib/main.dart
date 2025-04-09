@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/pages/home.dart';
+import 'package:frontend/pages/home_page_content.dart';
+import 'package:frontend/pages/navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         
       ),
       title: 'Home Page',
-      home: HomePage(),
+      home: NavigationBarApp(),
     );
   }
 }
