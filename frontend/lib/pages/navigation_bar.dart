@@ -16,6 +16,7 @@ class _NavBarState extends State<NavigationBarApp> {
   final List<Widget> _pages = [
     HomePage(), // Your main home page
     WeeklyPlannerScreen(), // Replace with actual widget
+    RecipePage(),
   ];
 
   void _onNavTapped(int index) {
@@ -33,9 +34,17 @@ class _NavBarState extends State<NavigationBarApp> {
         currentIndex: _selectedIndex,
         onTap: _onNavTapped,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label:"Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.menu_book), label:"Weekly Planner")
-        ] ),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.menu_book),
+            label: "Weekly Planner",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.lunch_dining),
+            label: "Recipes",
+          ),
+        ],
+      ),
     );
   }
 }
