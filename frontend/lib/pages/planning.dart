@@ -64,7 +64,12 @@ class _WeeklyPlannerScreenState extends State<WeeklyPlannerScreen> {
 
             return Column(
               children: [
-                Text(day),
+                Text(
+                  day,
+                  style: TextStyle(
+                    color: day == currentDay ? Colors.blue : Colors.black,
+                    ),
+                ),
                 const SizedBox(height: 10),
                 ...mealsForDay.map(
                   (meal) => Card(
@@ -72,9 +77,6 @@ class _WeeklyPlannerScreenState extends State<WeeklyPlannerScreen> {
                     child: ExpansionTile(
                       title: Text(
                         meal.meal,
-                        style: TextStyle(
-                          color: day == currentDay ? Colors.blue : Colors.black,
-                        ),
                       ),
                       children: [
                         Padding(

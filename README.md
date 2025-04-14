@@ -16,3 +16,4 @@
 - Why not add list of who is responsible for the shopping - planner
 - Different types of recipe
 - Link to open food fact ? Not that great but why not
+- QR codes - application with card for discounts 

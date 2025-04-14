@@ -111,7 +111,12 @@ class _HomePageState extends State<HomePage> {
 
             return Column(
               children: [
-                Text(day),
+                Text(
+                  day,
+                  style: TextStyle(
+                    color: day == currentDay ? Colors.blue : Colors.black,
+                  ),
+                ),
                 const SizedBox(height: 10),
                 ...mealsForDay.map(
                   (meal) => Card(
@@ -119,9 +124,6 @@ class _HomePageState extends State<HomePage> {
                     child: ExpansionTile(
                       title: Text(
                         meal.meal,
-                        style: TextStyle(
-                          color: day == currentDay ? Colors.blue : Colors.black,
-                        ),
                       ),
                       children: [
                         Padding(
