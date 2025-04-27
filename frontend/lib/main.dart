@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/pages/login_page.dart';
 import 'package:frontend/pages/navigation_bar.dart';
+import 'package:frontend/pages/register_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +22,15 @@ class MyApp extends StatelessWidget {
         
       ),
       title: 'Home Page',
-      home: NavigationBarApp(),
+      home: RegisterPage(),
+      initialRoute: "/register",
+      routes: {
+        '/register' : (context) => RegisterPage(),
+        '/login' : (context) => LoginPage(),
+        '/home' : (context) => NavigationBarApp()
+      },
+
+      //home: NavigationBarApp(),
     );
   }
 }

@@ -7,7 +7,7 @@ import 'package:intl/intl.dart';
 
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -56,7 +56,6 @@ class _HomePageState extends State<HomePage> {
     _get_recipes();
     _get_meals_planning();
     return Scaffold(
-      appBar: appBar(),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -32,7 +32,7 @@ class _NavBarState extends State<NavigationBarApp> {
     return Scaffold(
       appBar: AppBar(),
       body: _pages[_selectedIndex],
-      bottomNavigationBar: new Theme(
+      bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
           canvasColor: Colors.green,
           primaryColor: Colors.red,
