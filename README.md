@@ -7,7 +7,7 @@
 - Home page with all recipes inside the database
 - Recipe view with add/edit button options (instructions, ...)
 - View for the week - meal plan
-- Shopping list with custom fields - Colruyt/Delhaize (set to the recipe item)
+- Shopping list with custom fields - Colruyt/Delhaize (set to the recipe item) -> Implemented first with fixed fields
 - Import recipe from url 
 - Off-line browsing, sync upon connection
 - Light/dark mode
